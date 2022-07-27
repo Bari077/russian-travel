@@ -1,0 +1,256 @@
+@import url(../vendor/normalize.css);
+@import url(../fonts/fonts.css);
+
+.page {
+  font-family: Inter;
+  color: #FFFFFF;
+  background-color: #2A2C2F;
+  min-width: 1280px;
+  height: 100%;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  min-width: auto;
+  padding-top: 28px;
+  margin: 0 48px 56px;
+}
+
+.header__logo {
+  background-image: url(../images/logo.png);
+  width: 176px;
+  height: 52px;    
+}
+
+.header__lang {
+  margin-top: 18px;
+}
+
+.header__lang-link {
+  color: #FFFFFF;
+  line-height: 28px;
+  font-size: 24px;  
+  padding-left: 18px;
+  text-decoration: none;
+}
+
+.lead {
+  display: flex;
+  flex-direction: column;
+  max-width: 984px;
+  margin: 0 auto 92px;
+}
+
+.lead__title {
+  margin: 0 auto 32px;
+  width: 720px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 96px;
+  font-weight: 900;
+}
+
+.lead__subtitle {
+  margin: 0 auto 64px;
+  width: 640px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 30px;
+}
+
+.lead__image {
+  display: flex;
+  background-image: url(../images/train_cabin.jpg);
+  background-size: cover;
+  height: 615px;
+}
+
+.lead__image-vector {
+  height: 256px;
+  width: 100%;
+  padding-top: 85px;
+}
+
+.lead__caption {
+  margin: 0;
+  padding-top: 8px;
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 984px; 
+  margin: 0 auto 92px;
+}
+
+.intro__title {
+  margin: 0 0 40px;  
+  max-width: 690px;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+}
+
+.intro__text {
+  margin: 0 0 33px;
+  max-width: 690px;
+  font-size: 16px;
+  line-height: 163%;
+}
+
+.intro__list {
+  max-width: 690px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.photo-grid {
+  max-width: 1184px;
+  margin: 0 auto 92px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.photo-grid__item {
+  width: 284px;
+}
+
+.places {
+  display: flex;
+  flex-direction: column;
+  max-width: 984px; 
+  margin: 0 auto 92px;
+}
+
+.places__place {
+  margin-bottom: 80px;  
+  display: grid;
+  grid-template-columns: 460px 484px;
+  row-gap: 48px;
+  column-gap: 40px;  
+}
+
+.places__place:last-of-type {
+ margin-bottom: 0;
+}
+
+.place__title {
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+}
+
+.place__website {
+  align-self: end;
+}
+
+.place__url-heading {
+  margin: 0 0 12px;
+  color: #AAAAAA;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+}
+
+.place__link {
+  color:#FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  transition: opacity 0.5s;
+}
+
+.place__link:hover {
+  opacity: 0.8;
+}
+
+.place__paragraph {
+  margin: 0 0 26px;
+  font-size: 18px;
+  line-height: 163%; 
+}
+
+.cover {
+  position: relative;
+  max-width: 1184px;
+  min-height: 740px;  
+  margin: 0 auto 92px;
+  background-image: url('../images/cover-background.jpg');
+  background-size: cover;
+}
+
+.cover:hover .cover__overlay {
+  opacity: 70%;
+}
+
+.cover__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2A2C2F;
+    opacity: 30%;
+    transition: opacity 0.5s linear;
+}
+
+.cover__title {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 245px;
+  max-width: 560px;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.cover__subtitle {
+  position: relative;
+  margin: 0 auto;
+  padding-top: 32px;
+  max-width: 360px;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  min-width: auto;
+  margin: 0 48px 0;
+  padding-bottom: 24px;    
+}
+
+.footer__link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-right: 18px;
+  transition: opacity 0.5s linear;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
+}
+
+.footer__copyright {
+  font-size: 14px;
+  line-height: 16px;
+  text-align: right;
+}
