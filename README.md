@@ -15,4 +15,4 @@
 
 
 <p>Скриншот проекта:<p>
-<img src="/images/proect2-shot.gif" alt="Скриншот проекта: Путешествия по России">
+<img src="/images/project2-shot.gif" alt="Скриншот проекта: Путешествия по России">
