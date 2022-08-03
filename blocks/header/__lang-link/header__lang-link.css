@@ -4,6 +4,7 @@
     font-size: 24px;  
     padding-left: 18px;
     text-decoration: none;
+    transition: opacity 0.5s linear;
   }
   
   @media screen and (max-width: 767px) {
@@ -11,4 +12,12 @@
       font-size: 18px;
       line-height: 20px;
     }  
+  }
+
+  .header__lang-link:first-child {
+    padding-left: 0;
+  }
+
+  .header__lang-link:hover {
+    opacity: 0.8;
   }
